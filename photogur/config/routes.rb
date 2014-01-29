@@ -1,8 +1,8 @@
 Photogur::Application.routes.draw do
 
 
-#get 'pictures' => 'pictures#index'
-#root 'pictures#index'
+
+  root :to => 'pictures#index'
 
   get 'pictures' => 'pictures#index'
 
