@@ -2,6 +2,8 @@ Photogur::Application.routes.draw do
 
 
 #get 'pictures' => 'pictures#index'
-  root 'pictures#index'
+#root 'pictures#index'
 
+  get 'pictures' => 'pictures#index'
+  get 'pictures/:id' => 'pictures#show', as: "picture"
 end
